@@ -1,4 +1,4 @@
-//Aula 27 - Usando Template Strings
+//Usando Template Strings
 
 const nome = 'Rebeca';
 const concatenacao = 'Olá ' + nome + '!';

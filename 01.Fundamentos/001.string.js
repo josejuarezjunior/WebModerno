@@ -1,4 +1,4 @@
-//Aula 26 - Tipos em JavaScript: String
+//Tipos em JavaScript: String
 
 const escola = "Cod3r";
 

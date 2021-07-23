@@ -1,4 +1,4 @@
-//Aula 28 - Tipos em JavaScript: Boolean
+//Tipos em JavaScript: Boolean
 
 let isAtivo = false;
 console.log(isAtivo);

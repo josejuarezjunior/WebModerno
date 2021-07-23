@@ -1,4 +1,4 @@
-//Aula 62 - Usando a Estrutura IF/ELSE
+//Aula 72 - Usando a Estrutura IF/ELSE
 
 const imprimirResultado = function(nota) {
     if(nota >= 7){

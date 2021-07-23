@@ -1,4 +1,4 @@
-//Aula 30 - Tipos em JavaScript: Array
+//Tipos em JavaScript: Array
 
 /*
 JavaScript é uma linguagem multiparadigma. É possível programar nos paradigmas Procedural, Orientado à Objeto, Funcional...

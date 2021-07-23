@@ -1,4 +1,4 @@
-//Aula 33 - Exemplos Básicos de Função #01
+//Exemplos Básicos de Função #01
 
 /*
 Uma função é um verbo, é uma ação. Ela executa um processo baseado em sentenças de código.

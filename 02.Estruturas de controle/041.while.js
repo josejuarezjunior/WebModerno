@@ -1,4 +1,4 @@
-//Aula 65 - Usando a Estrutura WHILE
+//Aula 81 - Usando a Estrutura WHILE
 
 /*
  * O while é indicado quando a quantidade de 

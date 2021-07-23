@@ -1,4 +1,4 @@
-//Aula 35 - Declaração de variáveis com Var #01
+//Declaração de variáveis com Var #01
 
 //O exemplo abaixo mostra que a variável do tipo Var com o escopo global, pois é vista por todos os blocos.
 

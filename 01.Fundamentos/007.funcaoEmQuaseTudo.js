@@ -1,4 +1,4 @@
-//Aula 32 - Quase tudo é função
+//Quase tudo é função
 
 //Irá retornar 'function'
 console.log(typeof Object);

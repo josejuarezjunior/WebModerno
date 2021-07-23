@@ -1,4 +1,4 @@
-//Aula 70 - Cidadão de Primeira Linha
+//Cidadão de Primeira Linha
 
 //Função em JS é First-Class Object (Citizens)
 //Higher-order function

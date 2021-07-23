@@ -1,4 +1,4 @@
-//Aula 68- Usando a Estrutura FOR/IN
+//Aula 84- Usando a Estrutura FOR/IN
 
  const notas = [6.7, 7.4, 9.8, 8.1, 7.7];
 

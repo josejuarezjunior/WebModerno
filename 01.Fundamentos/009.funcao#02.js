@@ -1,4 +1,4 @@
-//Aula 34 - Exemplos Básicos de Função #02
+//Exemplos Básicos de Função #02
 
 //Armazenando uma função em uma variável
 const imprimirSoma = function (a, b){

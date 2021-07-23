@@ -1,4 +1,4 @@
-//Aula 31 - Entendendo o Null & Undefined
+//Entendendo o Null & Undefined
 
 //Como a constante 'a' é um objeto, ela referencia um endereço na memória onde está esse objeto
 console.log('Tipo referência:')
