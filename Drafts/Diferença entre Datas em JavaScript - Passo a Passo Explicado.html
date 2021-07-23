@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferença entre Datas em JavaScript - Passo a Passo Explicado</title>
+</head>
+<body>
+    <p>Datas são informações essenciais em qualquer aplicação. É muito comum ter que saber qual a diferença em meses, dias, ou até mesmo segundos entre uma data e outra. Para ajudar, escrevi este passo a passo útil para qualquer caso.</p>
+    <p><strong>Essencialmente, para descobrir a diferença entre duas datas, precisamos:</strong></p>
+    <ul>
+    <li>
+    <strong>Converter as datas em milisegundos usando getTime().</strong>
+    </li>
+    <li>
+    <strong>Fazer a subtração entre as datas.</strong>
+    </li>
+    <li>
+    <strong>Converter o resultado da subtração em um formato legível.</strong>
+    </li>
+    </ul>
+    <p>Lendo o passo a passo acima, você tem uma visão geral do processo e pode perceber que é algo simples, mas vamos aos detalhes.</p>
+    <h2>Como calcular a diferença entre duas datas</h2>
+    <p>Meu objetivo aqui é te ensinar a calcular a diferença entre duas datas em JavaScript sem a necessidade de nenhuma dependencia ou script externo.</p>
+    <p>Mas caso você veio até aqui buscando esse tipo de solução, existem algumas bibliotecas que te ajudam a fazer isso de forma simples. Uma delas é o <a href="https://momentjs.com/" target="_blank">Moment.js</a>.</p>
+    <p>Usando momentjs você pode fazer:</p>
+    <pre><code class="language-javascript">const now = moment(new Date()); // Data de hoje
+    const past = moment(&#34;2014-07-07&#34;); // Outra data no passado
+    const duration = moment.duration(now.diff(past));
+    
+    // Mostra a diferença em dias
+    const days = duration.asDays();
+    </code></pre>
+    <p>Mas o que eu gosto mesmo é do método <strong>doityourself.js</strong> (FAÇA VOCÊ MESMO), sem dependências, pois a tarefa não é tão difícil e pra que pesar mais a minha aplicação?</p>
+    <p><strong>Faça você mesmo:</strong> O código abaixo mostra um exemplo completo com JavaScript puro. Nos tópicos abaixo eu explico cada um dos passos e posso te ajudar caso a solução abaixo ainda não seja útil para o seu caso.</p>
+    <pre><code class="language-javascript">const now = new Date(); // Data de hoje
+    const past = new Date(&#39;2014-07-07&#39;); // Outra data no passado
+    const diff = Math.abs(now.getTime() - past.getTime()); // Subtrai uma data pela outra
+    const days = Math.ceil(diff / (1000 * 60 * 60 * 24)); // Divide o total pelo total de milisegundos correspondentes a 1 dia. (1000 milisegundos = 1 segundo).
+    
+    // Mostra a diferença em dias
+    console.log(&#39;Entre 07/07/2014 até agora já se passaram &#39; + days + &#39; dias&#39;);
+    </code></pre>
+    <h2>Passo a passo de como calcular</h2>
+    <p>Agora vamos quebrar o script acima em alguns passos para entendermos como funcionou a nossa conta e também mostrar outros exemplos caso você precise.</p>
+    <p>O primeiro passo é ter 2 datas, e este pode ser o passo mais chato se já não tivermos elas no formato certo, pois precisaremos que as datas sejam convertidas para um formato que nosso código seja capaz de ler, ou seja, um formato que possa ser inicializado com <code>new Date()</code> e isso possa ser reconhecido como uma data.</p>
+    <p>Existem pelo menos 5 maneiras de inicializar um objeto Date em JavaScript:</p>
+    <pre><code class="language-javascript">// A data e horário atual
+    new Date();
+    
+    // A data a partir de um timestamp (valor inteiro de milisegundos desde 01/01/1970)
+    new Date(1554539293261);
+    
+    // A data inicializada a partir de outro objeto Date
+    var outroDia = new Date(&#39;2018-10-11 12:30&#39;);
+    new Date(outroDia);
+    
+    // A data inicializada a partir de uma date string válida
+    new Date(&#39;October 11 2018 12:30&#39;);
+    new Date(&#39;2018-10-11 12:30&#39;);
+    
+    // A data inicializada a partir do construtor de Date(ano, mes - 1, dia, hora, minuto, segundo, milisegundo)
+    new Date(2018, 09, 11, 12, 30);
+    </code></pre>
+    <p>Qualquer formato acima para inicializarmos as nossas datas é válido. Portanto se você tem uma data, ex: &#34;30/03/2019&#34;, você não consegue transformar isso em Date() direto sem dar um &#34;parse&#34; antes.</p>
+    <p>Mas caso esse seja seu caso, também vou facilitar o processo de como fazer isso. Basicamente você vai precisar</p>
+    <pre><code class="language-javascript">// Digamos que este é o formato das suas datas
+    let data = &#39;30/03/2019&#39;;
+    
+    // Precisamos quebrar a string para retornar cada parte
+    const dataSplit = data.split(&#39;/&#39;);
+    
+    const day = dataSplit[0]; // 30
+    const month = dataSplit[1]; // 03
+    const year = dataSplit[2]; // 2019
+    
+    // Agora podemos inicializar o objeto Date, lembrando que o mês começa em 0, então fazemos -1.
+    data = new Date(year, month - 1, day);
+    </code></pre>
+    <p>O script acima te ajuda a converter o formato brasileiro em objeto Date. Se você precisar também da hora, minuto e segundo (ex: 30/03/2019 12:30:30), basta fazer outros dois splits (no &#34; &#34; e no &#34;:&#34;), para dividir os horários.</p>
+    <p>Fazendo a conversão se necessária nas duas datas a trabalhar, o próximo passo é o mais simples de todos, e é universal. Você precisa converter as datas em milisegundos (o método getTime() faz isso por você) e pegar a diferença entre estes dois valores.</p>
+    <p>Usaremos também o método Math.abs que retorna o valor absoluto da diferença, então não importa se eu colocar a data menor antes da maior.</p>
+    <pre><code class="language-javascript">// ...
+    const diff = Math.abs(data1.getTime() - data2.getTime());
+    </code></pre>
+    <p>Agora o último passo é só definir em que formato eu quero a diferença entre as datas.</p>
+    <p>No script completo eu mostrei como obter a diferença em dias, mas é possível exibir em qualquer formato. Usei também Math.ceil para arredondar para cima caso o resultado fosse fracionado.</p>
+    <p>No código acima eu fiz o seguinte cálculo:</p>
+    <pre><code class="language-javascript">// ...
+    const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+    // 1000 é o número de milisegundos em 1 segundo
+    // 60 segundos tem um minuto
+    // 60 minutos tem uma hora ?
+    // 24 horas tem um dia ??
+    
+    // 1.a Multiplique tudo e você obtem o número de milisegundos em um dia.
+    // 1.b Use essa constante se preferir 86400000.
+    // 2. Divida pela diferença entre datas e você tem o número de dias 
+    </code></pre>
+    <p>Então se eu quisesse saber a diferença em horas, bastaria dividir por 1000 * 60 * 60. Se quisesse saber em anos faria 1000 * 60 * 60 * 24 * 365, e assim por diante.</p>
+    <p>Acho que deu pra ficar bem claro até aqui. O procedimento de cálculo entre datas é bem simples na teoria. Mas é capaz que você tenha procurado este artigo pra entender como é feita a conversão. Espero ter te ajudado.</p>
+    
+</body>
+</html>
+                                                            
+    
+    
+                                
+    
+                               
