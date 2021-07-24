@@ -1,4 +1,4 @@
-//Aula 41 - Usando Let em Loop #02
+//Usando Let em Loop #02
 
 var funcs = [];
 

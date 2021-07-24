@@ -1,4 +1,4 @@
-//Aula 67 - Usando a Estrutura FOR
+//Usando a Estrutura FOR
 
 /** 
 let contador = 1;

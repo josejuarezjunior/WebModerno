@@ -1,4 +1,4 @@
-//Aula 61 - Usando a Estrutura IF #02
+//Usando a Estrutura IF #02
 
 function teste1(num){
     if(num > 7)

@@ -1,4 +1,4 @@
-//Aula 60 - Usando a Estrutura IF #01
+//Usando a Estrutura IF #01
 
 function soBoaNoticia(nota){
     if(nota >= 7){

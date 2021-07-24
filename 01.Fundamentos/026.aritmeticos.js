@@ -1,4 +1,4 @@
-//Aula 51 - Operadores: Aritméticos
+//Operadores: Aritméticos
 
 /*
 Aqui não se trata da criação de uma array,

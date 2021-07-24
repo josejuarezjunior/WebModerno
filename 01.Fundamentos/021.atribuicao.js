@@ -1,4 +1,4 @@
-//Aula 46 - Operadores: Atribuição
+//Operadores: Atribuição
 
 /*
 O sinal '=', assim como em outras linguagens de programação, é o sinal de atribuição de valor.

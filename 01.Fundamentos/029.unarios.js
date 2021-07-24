@@ -1,4 +1,4 @@
-//Aula 54 - Operadores: Unários
+//Operadores: Unários
 
 let num1 = 1;
 let num2 = 2;

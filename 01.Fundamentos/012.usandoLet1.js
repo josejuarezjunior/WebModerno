@@ -1,4 +1,4 @@
-//Aula 37 - Declaração de variáveis com Let
+//Declaração de variáveis com Let
 
 let numero = 1;
 {

@@ -1,4 +1,4 @@
-//Aula 69 - Usando Break/Continue
+//Usando Break/Continue
 
 /**
  * O 'break' não funciona em um bloco do tipo

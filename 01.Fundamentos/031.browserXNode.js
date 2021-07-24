@@ -1,4 +1,4 @@
-//Aula 56 - Contexto de Execução: Browser vs Node
+//Contexto de Execução: Browser vs Node
 
 /*
 Uma variável do tipo let é de escopo local,

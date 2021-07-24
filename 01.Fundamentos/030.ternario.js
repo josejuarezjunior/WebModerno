@@ -1,4 +1,4 @@
-//Aula 55 - Operadores: Ternário
+//Operadores: Ternário
 
 /*
 Utilizando uma função arrow

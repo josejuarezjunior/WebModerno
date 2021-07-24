@@ -3,7 +3,7 @@
 function soma() {
     let soma = 0;
     /**
-     * arguments é um array interno de uma função que 
+     * 'arguments' é um array interno de uma função que 
      * permite o uso de parâmetros variáveis!!!!
      */
     for (i in arguments){

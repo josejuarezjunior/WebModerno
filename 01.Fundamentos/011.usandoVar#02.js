@@ -1,4 +1,4 @@
-//Aula 36 - Declaração de variáveis com Var #02
+//Declaração de variáveis com Var #02
 
 var numero = 1;
 {

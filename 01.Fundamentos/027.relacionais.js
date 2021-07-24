@@ -1,4 +1,4 @@
-//Aula 52 - Operadores: Relacionais
+//Operadores: Relacionais
 
 /*
 O resultado de toda operação com operadores

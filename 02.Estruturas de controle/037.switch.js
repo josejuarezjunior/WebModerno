@@ -1,4 +1,4 @@
-//Aula 64 - Usando a Estrutura SWITCH
+//Usando a Estrutura SWITCH
 
 const imprimirResultado = function(nota){
     //O 'Math.floor' arredonda o valor pra baixo

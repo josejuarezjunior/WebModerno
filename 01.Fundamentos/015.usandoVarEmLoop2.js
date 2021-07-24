@@ -1,4 +1,4 @@
-//Aula 40 - Usando Var em Loop #02
+//Usando Var em Loop #02
 
 var funcs = [];
 

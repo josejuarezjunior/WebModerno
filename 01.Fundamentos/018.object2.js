@@ -1,4 +1,4 @@
-//Aula 43 - Função Vs Objeto
+//Função Vs Objeto
 
 console.log(typeof Object);
 console.log(typeof new Object);

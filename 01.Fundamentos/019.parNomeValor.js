@@ -1,4 +1,4 @@
-//Aula 44 - Par Nome/Valor
+//Par Nome/Valor
 
 //Um objeto é uma coleção de chave e valor
 

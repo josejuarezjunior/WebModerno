@@ -1,4 +1,4 @@
-//Aula 66 - Usando a Estrutura DO/WHILE
+//Usando a Estrutura DO/WHILE
 
 /*
  * A estrutura Do While, garante que o laço

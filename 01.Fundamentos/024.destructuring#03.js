@@ -1,4 +1,4 @@
-//Aula 49 -  Operadores: Destructuring #03
+//Operadores: Destructuring #03
 
 
 /*

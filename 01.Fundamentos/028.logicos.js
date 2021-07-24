@@ -1,4 +1,4 @@
-//Aula 53 - Operadores: Lógicos
+//Operadores: Lógicos
 
 /*
 Tabela verdade

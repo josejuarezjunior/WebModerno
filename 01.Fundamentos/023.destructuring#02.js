@@ -1,4 +1,4 @@
-//Aula 48 - Operadores: Destructuring #02
+//Operadores: Destructuring #02
 
 //Destructuring com arrays
 

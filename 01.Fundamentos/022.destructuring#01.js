@@ -1,4 +1,4 @@
-//Aula 47 - Operadores: Destructuring #01
+//Operadores: Destructuring #01
 
 //Novo recurso do ES2015
 

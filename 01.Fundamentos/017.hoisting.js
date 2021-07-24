@@ -1,4 +1,4 @@
-//Aula 42 - Entendendo o Hoisting
+//Entendendo o Hoisting
 
 /*
 No exemplo abaixo, a variável 'a' não foi declarada,

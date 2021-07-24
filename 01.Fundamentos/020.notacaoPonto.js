@@ -1,4 +1,4 @@
-//Aula 45 - Notação Ponto
+//Notação Ponto
 
 console.log(typeof console);
 console.log(Math.ceil(6.1));

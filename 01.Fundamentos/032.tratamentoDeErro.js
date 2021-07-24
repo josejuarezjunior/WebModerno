@@ -1,4 +1,4 @@
-//Aula 57 - Tratamento de Erro(Try/Catch/Throw)
+//Tratamento de Erro(Try/Catch/Throw)
 
 function tratarErroELancar(erro){
    //throw new Error('...');

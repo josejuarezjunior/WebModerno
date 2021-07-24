@@ -1,4 +1,4 @@
-//Aula 50 - Operadores: Destructuring #04
+//Operadores: Destructuring #04
 
 //Um desctructing com array
 function rand([min = 0, max = 1000]){
